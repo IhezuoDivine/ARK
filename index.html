@@ -20,13 +20,18 @@
               <small>INVEST</small>
             </div>
         </div>
-        <div class="menu-btn">
-            <a href=""><i class="fa fa-search search-icon"></i></a>
-         <button id="menu-btn">
-          <i id="menu-icon" class="fa fa-bars"></i>
-          <i id="close-icon" class="fa fa-times" style="display: none"></i>
-        </button>
-  </div>
+         <div class="menu-btn">
+
+      <a href="">
+        <i class="fa fa-search search-icon"></i>
+      </a>
+
+      <button id="menu-btn" aria-label="Open menu">
+        <i id="menu-icon" class="fa fa-bars"></i>
+        <i id="close-icon" class="fa fa-times"></i>
+      </button>
+
+    </div>
          <div class="For-large-screen">
             <ul>
               <li><a href="">Investment Solutions ▼</a></li>
@@ -39,7 +44,36 @@
       </div>
     </header>
 
-  <main>
+    <nav class="mobile-menu" id="mobile-menu">
+
+  <ul>
+    <li>
+      <a href="">Investment Solutions</a> <p>→</p>
+    </li>
+
+    <li>
+      <a href="">Why Innovation</a> <p>→</p>
+    </li>
+
+    <li>
+      <a href="">About ARK</a><p>→</p>
+    </li>
+
+    <li>
+      <a href="">Research Center</a><p>→</p>
+    </li>
+
+  </ul>
+
+  <p  class="mobile-subscribe"> <a href=""  class="mobile-subscribe-a">
+    Subscribe
+  </a></p>
+
+ 
+
+</nav>
+
+  <main id="main-container">
     <section class="hero">
 
         <div class="large-hero-content">
@@ -55,7 +89,7 @@
       <img src="ark-images/ark hero .jpg" class="hero-img" alt="Hero image">
       </div>
     <div  class="explore">
-      <a href="#" class="explore-link"><span >⬇</span>  Explore</a>
+      <a href="#" class="explore-link"><span >↓</span>  Explore</a>
 
        <div class="socials">
           <a href="#" aria-label="Twitter">𝕏</a>
@@ -305,7 +339,7 @@
 
 <section class="ark-process">
     <h2>ARK's Investment Process</h2>
-    <h6>⬇</h6>
+    <h6>↓</h6>
     <h4>Top-Down Research</h4>
     <p>To define the investment universe, ARK's 
         investment process initially examines how the world
@@ -328,7 +362,7 @@
    </div>
 
    <article  class="Bottom-Up" >
-     <h6>⬆</h6>
+     <h6>↑</h6>
 
      <h4>Bottom-Up Research</h4>
 
@@ -618,6 +652,7 @@
 </footer>
 
 </main>
+<script src="ark.js"></script>
 
 </body>
 </html>

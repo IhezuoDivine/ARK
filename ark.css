@@ -81,7 +81,7 @@ letter-spacing: 2px;
 #menu-btn {
   background: transparent;
   color: var(--navy);
-  font-size: 20px;
+  font-size: 25px;
   margin-left: auto;
   cursor: pointer;
 }
@@ -921,8 +921,6 @@ margin-top: 30px;
     margin-bottom: 35px;
 }
 
-
-
 .footer {
   width: 100%;
   padding: 60px 30px;
@@ -978,9 +976,6 @@ margin-top: 30px;
   color: var(--purple);
 }
 
-
-
-
 .faq-title {
   width: 100%;
 
@@ -1007,14 +1002,9 @@ margin-top: 30px;
   display: none;
 }
 
-
-
 .faq-content {
   max-height: none;
 }
-
-
-
 
 @media (max-width: 900px) {
 
@@ -1023,8 +1013,6 @@ margin-top: 30px;
   }
 
 }
-
-
 
 @media (max-width: 600px) {
 
@@ -1152,6 +1140,85 @@ margin-top: 30px;
 
   .legal-links a {
     font-size: 12px;
+  }
+
+}
+
+
+#close-icon {
+  display: none;
+  font-size: 30px;
+}
+
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+  align-items: center;
+ padding-top: 70px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+#mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid var(--gray);
+  padding: 30px 20px;
+}
+#mobile-menu ul li a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+#mobile-menu a:hover{
+  color: var(--purple);
+}
+
+ .mobile-subscribe {
+  background: var(--purple);
+  padding: 30px 20px;
+  font-size: 17px;
+  color: var(--light);
+  width: 100%;
+}
+ .mobile-subscribe-a {
+  color: var(--light);
+  font-size: bold;
+}
+ .mobile-subscribe-a:hover {
+  color: var(--navy);
+}
+
+
+
+.header {
+  position: relative;
+  z-index: 1001;
+}
+
+@media (min-width: 1000px) {
+
+  #mobile-menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
   }
 
 }
