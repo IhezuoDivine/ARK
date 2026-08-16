@@ -865,28 +865,6 @@ margin-top: 10px;
   }
 }
 
-
-
-@media (max-width: 500px) {
-  .ark-process, .Bottom-Up  {
-    padding: 40px 15px;
-  }
-
-  .ark-process  div, .Bottom-Up div {
-    flex-direction: column;
-  }
-
-  .ark-process  div  img, .Bottom-Up div img {
-    width: 100%;
-    height: 180px;
-  }
-
-  .ark-process  div  div, .Bottom-Up div div {
-    padding: 18px;
-    text-align: center;
-  }
-}
-
 .Bottom-Up{
     margin-bottom: 30px;
 }
